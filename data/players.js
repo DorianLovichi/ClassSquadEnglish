@@ -46,15 +46,15 @@ globalThis.PLAYERS = [
   },
   {
     id: "ahmed",
-    name: "Ahmed Benali",
-    photo: "ahmed.png",
+    name: "Ahmed Dahdouh",
+    photo: "dahdouh-ahmed.jpg",
     role: "Data Pipeline Strategist",
     tagline: "Reads the game by reading the data before anyone else.",
     bio: "Ahmed orchestrates our analytics stack, lining up clean data streams so decisions stay sharp and timely.",
     skills: ["Python", "ETL", "SQL"],
     age: 27,
     dob: "19 February 1998",
-    birthPlace: "Oran, Algeria",
+    birthPlace: "Alger, Algeria",
     nationality: { country: "Algeria", flagCode: "dz" },
     strengths:
       "Schema design, predictive dashboards, production-ready notebooks",
@@ -92,7 +92,7 @@ globalThis.PLAYERS = [
     tagline: "Covers every inch of the pitch from database to DOM.",
     bio: "Anthony is the utility player who plugs gaps in the lineup, committing equal energy to front-end polish and back-end rigor.",
     skills: ["React", "PostgreSQL", "Testing"],
-    age: 25,
+    age: 23,
     dob: "11 July 2000",
     birthPlace: "Marseille, France",
     nationality: { country: "France", flagCode: "fr" },
@@ -170,23 +170,24 @@ globalThis.PLAYERS = [
     role: "Technical Captain",
     tagline:
       "Sets the vision, leads the press, and still finishes every sprint.",
-    bio: "Dorian captains the lineup through complex builds, balancing strategy with hands-on engineering when the clock is ticking.",
-    skills: ["Leadership", "Solutions Architecture", "Mentoring"],
+    bio: "Dorian captains the lineup through complex builds, balancing strategy with hands-on engineering while juggling master's studies and his GoodBarber work-study role.",
+    skills: ["Full-Stack Development", "DevOps", "AI intregration"],
     age: 25,
-    dob: "15 January 2000",
-    birthPlace: "Toulouse, France",
+    dob: "8 May 2002",
+    birthPlace: "Ajaccio, Corsica",
     nationality: { country: "France", flagCode: "fr" },
     strengths:
-      "Systems thinking, empathetic leadership, crisp technical storytelling",
+      "Full-stack fluency across ReactJS, Flask, and cloud deployment, paired with systems thinking and empathetic leadership",
     weaknesses:
-      "Puts ambitious goals on the roadmap and has to fight scope creep",
+      "Data processing workflows, UI/UX polish, and visual design instincts compared to coding depth",
     achievement:
-      "Steered a legacy rewrite that now powers a multi-campus learning platform",
+      "Built and deployed a self-hosted chatbot that optimizes prompts and supports multiple expert modes",
     futurePlans:
-      "Launch an academy track that blends real client briefs with squad mentoring",
-    funFact: "Never misses a sunrise run before match day",
+      "Deciding between continuing at GoodBarber or exploring roles abroad to experience new cultures",
+    funFact:
+      "Hails from Ajaccio and still chases sunrise runs before coding sprints",
     evaluation:
-      "Dorian has evolved from a dependable starter into the squad's anchor, and the transformation shows in every phase of delivery. Over the past year he redesigned our intake process, pairing early technical framing with just the right stakes for experimentation. His discovery workshops feel like a locker room huddle: inclusive, focused, and always forward-looking. Teammates trust that he will challenge assumptions without dismissing the work already invested, which keeps morale high even when the backlog gets dense. When a project risks slipping, he calmly realigns priorities, negotiates scope with stakeholders, and protects teammates from unnecessary pressure. That blend of care and decisiveness has made him the go-to person for the trickiest cross-team collaborations.\n\nOn the technical front, Dorian continues to push the squad toward modern, sustainable architecture. He championed our move to feature toggles, cutting the time between pull request merge and deploy from days to hours. He also launched a pairing rotation that lets newer teammates shadow senior developers on production code, accelerating growth across the team. His code reviews read like training sessions: concise, constructive, and sprinkled with practical examples that encourage autonomy. Looking ahead, he wants to formalize a mentorship program that matches juniors with specialists for four-week cycles, complete with measurable goals and post-cycle retros. With his talent for narrative and his ability to keep all eyes on the bigger picture, Dorian is not just ready for the next division - he is already coaching the squad to play there. He is already sketching the roadmap for a community hackathon series.",
+      "My name is Dorian Lovichi, I'm 23 years old. I was born on the 8th of May 2002 in Ajaccio. I'm a French student in a Master's program in full-stack development at the Università di Corsica Pasquale Paoli. I’m also in a work-study program with a tech company named GoodBarber. It develops an app builder to allow people who don’t know how to code to create a mobile or web app just with clicks and drag and drop. I’m passionate about software development.My main coding strength is full-stack development — ReactJS for the front end, Flask (Python) for the back end. I’m also passionate about cloud development: how to manage a system, how to deploy a project. My coding weaknesses are data processing, UI/UX, and design. I know how to structure a website when I have a template from the designer, but I don’t have the artistic side. My biggest achievement in coding is when I created a chatbot by myself. My chatbot can automatically optimize your prompt to help you receive a better answer. You can also change the mode of the chatbot between expert mode, translator mode, vulgarization mode, and more to come. This chatbot is hosted and deployed by myself on my own server and domain name. I’m a bit undecided about my future plans. I have to choose either to stay here if my company wants to continue with me or leave to find a job, maybe abroad. I’ve been in Ajaccio since I was born, and I’ll probably want to move on — probably out of France. I just want to see other countries because I’m still young and I want to discover different cultures.",
   },
   {
     id: "hafsa",
