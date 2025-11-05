@@ -238,10 +238,30 @@ a:focus {
 }
 
 .back-link {
+  position: sticky;
+  top: 1.5rem;
   align-self: flex-start;
-  padding: 0.25rem 0.5rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: var(--shadow);
+  z-index: 5;
+  transition: transform 200ms ease, box-shadow 200ms ease,
+    background-color 200ms ease, color 200ms ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 44px -24px rgba(15, 23, 42, 0.35);
+  background: rgba(37, 99, 235, 0.1);
 }
 
 .profile-hero {
@@ -254,6 +274,8 @@ a:focus {
   padding: 2.5rem;
   box-shadow: var(--shadow);
   border: 1px solid var(--card-border);
+  opacity: 0;
+  animation: fadeSlide 0.7s ease 0.1s both;
 }
 
 .profile-photo {
@@ -266,6 +288,7 @@ a:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: photoFloat 12s ease-in-out infinite alternate;
 }
 
 .profile-summary {
@@ -313,6 +336,28 @@ a:focus {
   border-radius: 999px;
   background: rgba(37, 99, 235, 0.14);
   font-size: 0.8rem;
+  opacity: 0;
+  animation: chipPop 0.45s ease both;
+}
+
+.chip-list li:nth-child(1) {
+  animation-delay: 0.35s;
+}
+
+.chip-list li:nth-child(2) {
+  animation-delay: 0.45s;
+}
+
+.chip-list li:nth-child(3) {
+  animation-delay: 0.55s;
+}
+
+.chip-list li:nth-child(4) {
+  animation-delay: 0.65s;
+}
+
+.chip-list li:nth-child(5) {
+  animation-delay: 0.75s;
 }
 
 .player-details {
@@ -327,6 +372,8 @@ a:focus {
   padding: 2.25rem;
   box-shadow: var(--shadow);
   border: 1px solid var(--card-border);
+  opacity: 0;
+  animation: fadeSlide 0.7s ease 0.25s both;
 }
 
 .details-card h3 {
@@ -338,6 +385,36 @@ a:focus {
   display: grid;
   gap: 1.2rem;
   margin: 0;
+}
+
+.details-list > div {
+  opacity: 0;
+  animation: fadeSlide 0.6s ease both;
+  animation-delay: 0.38s;
+}
+
+.details-list > div:nth-child(2) {
+  animation-delay: 0.46s;
+}
+
+.details-list > div:nth-child(3) {
+  animation-delay: 0.54s;
+}
+
+.details-list > div:nth-child(4) {
+  animation-delay: 0.62s;
+}
+
+.details-list > div:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.details-list > div:nth-child(6) {
+  animation-delay: 0.78s;
+}
+
+.details-list > div:nth-child(7) {
+  animation-delay: 0.86s;
 }
 
 .details-list dt {
@@ -359,6 +436,8 @@ a:focus {
   padding: 2.5rem;
   box-shadow: var(--shadow);
   border: 1px solid var(--card-border);
+  opacity: 0;
+  animation: fadeSlide 0.7s ease 0.35s both;
 }
 
 .player-evaluation h3 {
@@ -517,6 +596,59 @@ a:focus {
     #fcd116 33% 66%,
     #ce1126 66% 100%
   );
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes chipPop {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes photoFloat {
+  from {
+    transform: scale(1) translateY(0);
+  }
+
+  to {
+    transform: scale(1.03) translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-hero,
+  .details-card,
+  .player-evaluation,
+  .chip-list li,
+  .details-list > div {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+
+  .profile-photo img {
+    animation: none;
+  }
+
+  .back-link {
+    transition: none;
+  }
 }
 
 @media (max-width: 768px) {
