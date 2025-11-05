@@ -298,8 +298,8 @@ a:focus {
 
 .formation-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: clamp(1.75rem, 3vw, 2.6rem);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(1.6rem, 3vw, 2.4rem);
 }
 
 .player-card {
@@ -969,6 +969,29 @@ a:focus {
   }
 }
 
+@media (max-width: 1080px) {
+  .page-index main {
+    padding: 0 5vw 3.8rem;
+  }
+
+  .match-banner {
+    margin-top: 1.5rem;
+  }
+
+  .scoreboard {
+    padding: clamp(1.4rem, 3vw, 1.9rem) clamp(1.6rem, 4vw, 2.4rem);
+    gap: 1.35rem;
+  }
+
+  .team-header {
+    padding: clamp(1.4rem, 3vw, 1.85rem) clamp(1.5rem, 4vw, 2.4rem);
+  }
+
+  .team-title h2 {
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+  }
+}
+
 @media (max-width: 900px) {
   .scoreboard {
     grid-template-columns: 1fr;
@@ -986,10 +1009,10 @@ a:focus {
   .team-header {
     flex-direction: column;
     align-items: flex-start;
-  }
 
   .team-record {
     text-align: left;
+    width: 100%;
   }
 }
 
@@ -998,8 +1021,29 @@ a:focus {
     padding: 3rem 6vw 1.75rem;
   }
 
+  .page-index main {
+    padding: 0 5vw 3.4rem;
+  }
+
+  .match-banner {
+    gap: 1.2rem;
+  }
+
+  .banner-copy {
+    font-size: 0.94rem;
+  }
+
+  .team-title {
+    gap: 0.35rem;
+  }
+
+  .team-record {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.25rem;
+  }
+
   .formation-grid {
-    gap: 1.9rem;
+    gap: 1.8rem;
   }
 
   .player-card {
@@ -1017,6 +1061,26 @@ a:focus {
 }
 
 @media (max-width: 540px) {
+  .site-header {
+    padding: 2.8rem 6vw 1.5rem;
+  }
+
+  .page-index main {
+    padding: 0 5vw 3rem;
+  }
+
+  .match-banner {
+    margin-top: 1.2rem;
+  }
+
+  .scoreboard-name {
+    font-size: clamp(0.95rem, 4vw, 1.15rem);
+  }
+
+  .scoreboard-count {
+    font-size: clamp(1.25rem, 4.6vw, 1.7rem);
+  }
+
   .player-info {
     padding: 1.35rem 1.6rem 1.6rem;
   }
@@ -1037,5 +1101,21 @@ a:focus {
     width: 2.6rem;
     height: 2.6rem;
     font-size: 0.72rem;
+  }
+
+  .team-header {
+    padding: 1.35rem 1.5rem;
+  }
+
+  .team-title h2 {
+    font-size: 1.35rem;
+  }
+
+  .team-record-label {
+    font-size: 0.7rem;
+  }
+
+  .team-record-value {
+    font-size: 1rem;
   }
 }
