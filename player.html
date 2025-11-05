@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Player Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="page-profile">
+    <header class="site-header">
+      <div class="site-branding">
+        <a class="site-pill" href="index.html">Class Squad</a>
+        <h1 id="player-name-heading">Player Profile</h1>
+        <p id="player-intro">Loading player details...</p>
+      </div>
+    </header>
+
+    <main class="player-main" aria-live="polite">
+      <a class="back-link" href="index.html">&larr; Back to squad</a>
+
+      <section class="profile-hero" aria-labelledby="player-name-heading">
+        <div class="profile-photo">
+          <img id="player-photo" src="" alt="" loading="lazy" />
+        </div>
+        <div class="profile-summary">
+          <h2 id="player-name" class="player-name">Loading player...</h2>
+          <p id="player-role" class="player-role"></p>
+          <p id="player-tagline" class="player-tagline"></p>
+          <ul
+            id="player-skills"
+            class="chip-list"
+            aria-label="Core skills"
+          ></ul>
+          <p id="player-bio" class="player-bio"></p>
+        </div>
+      </section>
+
+      <section class="player-details" aria-label="Player details">
+        <div class="details-card">
+          <h3>Player details</h3>
+          <dl class="details-list">
+            <div>
+              <dt>Age / Date of birth</dt>
+              <dd id="player-dob"></dd>
+            </div>
+            <div>
+              <dt>Place of birth / Nationality</dt>
+              <dd id="player-birth"></dd>
+            </div>
+            <div>
+              <dt>Coding strengths</dt>
+              <dd id="player-strengths"></dd>
+            </div>
+            <div>
+              <dt>Coding weaknesses</dt>
+              <dd id="player-weaknesses"></dd>
+            </div>
+            <div>
+              <dt>Biggest achievement</dt>
+              <dd id="player-achievement"></dd>
+            </div>
+            <div>
+              <dt>Future plans</dt>
+              <dd id="player-future"></dd>
+            </div>
+            <div>
+              <dt>Interesting fact</dt>
+              <dd id="player-fun"></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="player-evaluation" class="player-evaluation" hidden>
+        <h3>Written evaluation</h3>
+        <p class="evaluation-copy"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Ready for the next fixture? Return to the
+        <a href="index.html">main squad view</a>.
+      </p>
+    </footer>
+
+    <script src="./data/players.js"></script>
+    <script defer src="./scripts/player.js"></script>
+  </body>
+</html>
