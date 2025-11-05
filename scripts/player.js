@@ -1,5 +1,10 @@
 const players = Array.isArray(globalThis.PLAYERS) ? globalThis.PLAYERS : [];
 
+const TEAM_LABELS = {
+  "full-stack": { name: "Full-Stack Developers", code: "FS" },
+  "data-engineering": { name: "Data Engineers", code: "DE" },
+};
+
 const params = new URLSearchParams(window.location.search);
 const playerId = params.get("id");
 const player = players.find((item) => item.id === playerId);
@@ -32,9 +37,12 @@ if (!player) {
     heading.textContent = player.name;
   }
   if (intro) {
-    intro.textContent = `Scouting report for ${
-      player.name
-    }, our ${player.role.toLowerCase()}.`;
+    const teamDetails = TEAM_LABELS[player.team];
+    const positionLabel = player.position
+      ? `${player.position.toLowerCase()}`
+      : "versatile playmaker";
+    const teamLabel = teamDetails ? ` for the ${teamDetails.name}` : "";
+    intro.textContent = `Scouting report for ${player.name}, our ${positionLabel}${teamLabel}.`;
   }
 
   const nameEl = document.getElementById("player-name");
@@ -43,6 +51,10 @@ if (!player) {
   const bioEl = document.getElementById("player-bio");
   const photoEl = document.getElementById("player-photo");
   const skillsEl = document.getElementById("player-skills");
+  const positionEl = document.getElementById("player-position");
+  const teamEl = document.getElementById("player-team");
+  const jerseyEl = document.getElementById("player-number-badge");
+  const badgeRow = document.querySelector(".player-badges");
   const dobEl = document.getElementById("player-dob");
   const birthEl = document.getElementById("player-birth");
   const strengthsEl = document.getElementById("player-strengths");
@@ -57,12 +69,49 @@ if (!player) {
     photoEl.alt = `Portrait of ${player.name}`;
   }
 
+  if (jerseyEl) {
+    if (Number.isFinite(player.number)) {
+      jerseyEl.textContent = String(player.number).padStart(2, "0");
+      jerseyEl.hidden = false;
+    } else {
+      jerseyEl.hidden = true;
+    }
+  }
+
   if (nameEl) {
     nameEl.textContent = player.name;
   }
 
   if (roleEl) {
     roleEl.textContent = player.role;
+  }
+
+  if (positionEl) {
+    if (player.position) {
+      positionEl.textContent = player.position;
+      positionEl.hidden = false;
+    } else {
+      positionEl.textContent = "";
+      positionEl.hidden = true;
+    }
+  }
+
+  if (teamEl) {
+    const teamDetails = TEAM_LABELS[player.team];
+    if (teamDetails) {
+      teamEl.textContent = teamDetails.name;
+      teamEl.hidden = false;
+    } else {
+      teamEl.textContent = "";
+      teamEl.hidden = true;
+    }
+  }
+
+  if (badgeRow) {
+    const hasBadge =
+      (positionEl && !positionEl.hidden && positionEl.textContent.trim()) ||
+      (teamEl && !teamEl.hidden && teamEl.textContent.trim());
+    badgeRow.hidden = !hasBadge;
   }
 
   if (taglineEl) {

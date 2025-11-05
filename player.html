@@ -26,11 +26,22 @@
 
       <section class="profile-hero" aria-labelledby="player-name-heading">
         <div class="profile-photo">
+          <span id="player-number-badge" class="player-number-badge" hidden>
+            00
+          </span>
           <img id="player-photo" src="" alt="" loading="lazy" />
         </div>
         <div class="profile-summary">
           <h2 id="player-name" class="player-name">Loading player...</h2>
           <p id="player-role" class="player-role"></p>
+          <div class="player-badges" hidden>
+            <span
+              id="player-position"
+              class="player-position-badge"
+              hidden
+            ></span>
+            <span id="player-team" class="player-team-badge" hidden></span>
+          </div>
           <p id="player-tagline" class="player-tagline"></p>
           <ul
             id="player-skills"
