@@ -25,29 +25,16 @@
     </header>
 
     <main>
-      <section class="match-banner" aria-label="Match card">
-        <div class="scoreboard">
-          <div class="scoreboard-team" data-team="full-stack">
-            <span class="scoreboard-code">FS</span>
-            <span class="scoreboard-name">Full-Stack Developers</span>
-            <span class="scoreboard-count" data-count>0</span>
-            <span class="scoreboard-formation" data-formation>4-3-3</span>
-          </div>
-          <span class="scoreboard-vs">vs</span>
-          <div class="scoreboard-team" data-team="data-engineering">
-            <span class="scoreboard-code">DE</span>
-            <span class="scoreboard-name">Data Engineers</span>
-            <span class="scoreboard-count" data-count>0</span>
-            <span class="scoreboard-formation" data-formation>3-4-3</span>
-          </div>
-        </div>
-        <p class="banner-copy">
-          Internal derby night: delivery pace meets data precision. Hover a
-          jersey then click through for the full scouting report.
-        </p>
-      </section>
+      <nav class="team-nav" aria-label="Team selection">
+        <button class="team-nav-btn active" data-team="full-stack">
+          Full-Stack
+        </button>
+        <button class="team-nav-btn" data-team="data-engineering">
+          Data Engineer
+        </button>
+      </nav>
 
-      <section class="teams-grid" aria-label="Team rosters"></section>
+      <section class="squad-container" aria-label="Squad roster"></section>
     </main>
 
     <footer class="site-footer">
