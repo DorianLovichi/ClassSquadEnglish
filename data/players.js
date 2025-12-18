@@ -1,7 +1,7 @@
 globalThis.PLAYERS = [
   {
     id: "abdou",
-    name: "Abdou Diallo",
+    name: "Abdou Samath Seck",
     photo: "abdou.png",
     role: "Reliability Engineer",
     tagline: "Keeps every API call on-side during peak traffic nights.",
@@ -27,7 +27,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "achille",
-    name: "Achille Moreau",
+    name: "Achille Poirier",
     photo: "achille.png",
     role: "Front-end Animator",
     tagline:
@@ -76,7 +76,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "ambroise",
-    name: "Ambroise Pouwe",
+    name: "Pouwedeou Ambroise Kilimou",
     photo: "ambroise.png",
     role: "Experience Integrator",
     tagline: "Connects the midfield between product, design, and delivery.",
@@ -122,7 +122,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "anthomarc",
-    name: "Antho Marchiselli",
+    name: "Anthony Marchiselli",
     photo: "anthoMarc.png",
     role: "DevOps Playmaker",
     tagline: "Launches features with pipelines as smooth as a one-touch pass.",
@@ -167,7 +167,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "clem",
-    name: "Clem Mirande",
+    name: "Clementine Mirande",
     photo: "clem.png",
     role: "Product Storyteller",
     tagline: "Crafts narratives that keep features aligned with user needs.",
@@ -216,34 +216,8 @@ globalThis.PLAYERS = [
       "My name is Dorian Lovichi, I'm 23 years old. I was born on the 8th of May, 2002 in Ajaccio. I'm a French student in a Master's program in full-stack development at the Università di Corsica Pasquale Paoli. I’m also in a work-study program with a tech company called GoodBarber. It develops an app builder to allow people who don’t know how to code to create a mobile or web app with clicks and drag and drop. I’m passionate about software development. My main coding strength is full-stack development — ReactJS for the front end, Flask (Python) for the back end. I’m also passionate about cloud development: how to manage a system, how to deploy a project. My coding weaknesses are data processing, UI/UX, and design. I know how to structure a website when I have a template from the designer, but I don’t have the artistic side. My biggest achievement in coding is when I created a chatbot by myself. My chatbot can automatically optimize your prompt to help you receive a better answer. You can also change the mode of the chatbot between expert mode, translator mode, vulgarization mode, and more to come. This chatbot is hosted and deployed by myself on my own server and domain name. I’m a bit undecided about my future plans. I have to choose either to stay here if my company wants to continue with me or leave to find a job, maybe abroad. I’ve been in Ajaccio since I was born, and I’ll probably want to move on — probably out of France. I just want to see other countries because I’m still young and I want to discover different cultures.",
   },
   {
-    id: "dounia",
-    name: "Dounia Ait Lahcen",
-    photo: "dounia.png",
-    role: "Data Quality Sweeper",
-    tagline: "Slides into anomalies before they turn into match-losing bugs.",
-    team: "data-engineering",
-    position: "Defender",
-    number: 9,
-    bio: "Dounia tracks the channels between raw events and trusted dashboards, chasing down noisy edge cases so decisions stay accurate and on time.",
-    skills: ["Data Validation", "Python", "Airflow"],
-    age: 24,
-    dob: "15 March 2001",
-    birthPlace: "Toulouse, France",
-    nationality: { country: "France", flagCode: "fr" },
-    strengths:
-      "Anomaly triage, regression test design for data pipelines, calm incident response",
-    weaknesses:
-      "Obsesses over rare edge cases and occasionally slows the sprint tempo",
-    achievement:
-      "Closed a runaway billing incident by tracing a single malformed event stream",
-    futurePlans:
-      "Roll out automated data contracts across every inbound integration",
-    funFact:
-      "Keeps a chalkboard of goal celebrations mapped to metric milestones",
-  },
-  {
     id: "hafsa",
-    name: "Hafsa Idrissi",
+    name: "Hafsa Abbouri",
     photo: "Hafsa_pic.jpeg",
     role: "UX Analyst",
     tagline: "Reads the touchline of user behavior and feeds the strikers.",
@@ -266,7 +240,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "manal",
-    name: "Manal Kasmi",
+    name: "Manal Ez-Zaher",
     photo: "mn.jpg",
     role: "Interface Playmaker",
     tagline: "Threads together layout, latency, and delight in one move.",
@@ -290,7 +264,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "matthieu",
-    name: "Matthieu Garnier",
+    name: "Matthieu Michelozzi",
     photo: "matthieu.png",
     role: "Data-driven Coach",
     tagline: "Turns telemetry into tactics for continuous improvement.",
@@ -313,7 +287,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "mehdi",
-    name: "Mehdi Slaoui",
+    name: "Mehdi Ghoulam",
     photo: "mehdi.png",
     role: "Mobile Strategist",
     tagline: "Ensures the experience travels just as well on away fixtures.",
@@ -335,12 +309,12 @@ globalThis.PLAYERS = [
   },
   {
     id: "mounia",
-    name: "Mounia Rahmani",
+    name: "Mounia Bessam",
     photo: "mounia.png",
     role: "Content Strategist",
     tagline: "Keeps the voice of the product singing in harmony.",
-    team: "full-stack",
-    position: "Midfielder",
+    team: "data-engineering",
+    position: "Defender",
     number: 16,
     bio: "Mounia curates learning materials, ensuring every module sounds authentic and accessible to students.",
     skills: ["Editorial Planning", "Localization", "HTML"],
@@ -359,7 +333,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "nicolas",
-    name: "Nicolas Perrot",
+    name: "Nicolas Robles",
     photo: "nicolas.png",
     role: "Platform Architect",
     tagline: "Keeps the back line organized so innovation can push forward.",
@@ -382,7 +356,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "stephane",
-    name: "Stephane Essomba",
+    name: "Stephane Thiry",
     photo: "stephane.png",
     role: "Infrastructure Anchor",
     tagline: "Wins every aerial duel in infrastructure reviews.",
@@ -406,7 +380,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "thomas",
-    name: "Thomas Leroy",
+    name: "Thomas Cattarossi Dartiguelongue",
     photo: "thomas.png",
     role: "QA Libero",
     tagline: "Slides into bugs before they reach the scoreboard.",
@@ -428,7 +402,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "vitalli",
-    name: "Vitalli Popescu",
+    name: "Vitalii Renkas",
     photo: "vitalli.png",
     role: "Data Defender",
     tagline: "Keeps integrity solid so analysts stay in control.",
@@ -450,7 +424,7 @@ globalThis.PLAYERS = [
   },
   {
     id: "youssouf",
-    name: "Youssouf Traore",
+    name: "Youssouf Maham Bowba",
     photo: "Youssouf.png",
     role: "Automation Winger",
     tagline: "Stretches the field with scripts that free up time to create.",
