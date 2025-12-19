@@ -24,8 +24,28 @@ let activeTeam = "full-stack";
 // Initialize
 document.addEventListener("DOMContentLoaded", () => {
   setupNavigation();
+  setupTheme();
   renderSquad(activeTeam);
 });
+
+function setupTheme() {
+  const toggleBtn = document.getElementById("theme-toggle");
+  if (!toggleBtn) return;
+
+  // Check saved theme or system preference
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (savedTheme === "light" || (!savedTheme && !prefersDark)) {
+    document.body.classList.add("light-mode");
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    const isLight = document.body.classList.contains("light-mode");
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  });
+}
 
 function setupNavigation() {
   const navButtons = document.querySelectorAll(".team-nav-btn");
